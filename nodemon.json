@@ -1,0 +1,7 @@
+{
+    "watch": ["src", "index.js"],
+    "ignore": ["swagger-output.json", "node_modules"],
+    "ext": "js,json",
+    "exec": "node index.js"
+  }
+  

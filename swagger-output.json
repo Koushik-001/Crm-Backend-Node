@@ -37,6 +37,22 @@
         }
       }
     },
+    "/verify-otp": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        }
+      }
+    },
     "/login": {
       "post": {
         "description": "",

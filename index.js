@@ -6,10 +6,12 @@ const connectDB = require('./src/config/db');
 const swaggerAutogen = require('swagger-autogen')();
 const swaggerUi = require('swagger-ui-express');
 const env = require('dotenv');
+const cors = require('cors'); 
 env.config();
 const app = express();
+app.use(cors());
 app.use(bodyParser.json());
-
+app.options('*', cors());
 connectDB;
 const doc = {
   info: {

@@ -40,5 +40,5 @@ swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
     console.log(`API documentation is available at http://localhost:${process.env.PORT || 3000}/api-docs`);
   });
 }).catch((err) => {
-  console.error('Error generating Swagger docs:', err);
+  console.error('Error generating Swagger docs', err);
 });
